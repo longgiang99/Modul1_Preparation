@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function tryRemoveFromArray(arr,index){
+    // if(index < 0 || index >= arr.length){
+    //     return arr
+    // }
+    let n =[]
+    for(let i = 0; i < arr.length; i++){
+        if(i !== index ){
+            n.push(arr[i])
+        }
+    }return n
+}
+console.log(tryRemoveFromArray([1,2,3,4,5],2))
+</script>
+</body>
+</html>
